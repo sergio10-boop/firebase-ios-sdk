@@ -2312,8 +2312,8 @@ extension Auth: AuthInterop {
              message.hasPrefix("MISSING_RECAPTCHA_TOKEN") {
             try await recaptchaVerifier.injectRecaptchaFields(
               request: request,
-              provider: AuthRecaptchaProvider.password,
-              action: action
+              provider: AuthRecaptchaProvider.
+              action: 
             )
           } else {
             throw error
